@@ -1,0 +1,30 @@
+## When page initially loads
+  - Download alphabetically
+  (take into account: insert new data alphabetically)
+
+## Filters
+  # Filter by distance
+    - Let the backend do the math.
+  
+  # Filter by name
+    - Backend filter
+    
+    *options:
+      1. state variable with all names only
+      2. do the filter of names in javascript realm.
+      3. do a nice display of the names. keep names in state variable for further use 
+      4. when user clicks any name, fetch whole data {dataToDisplay = byNamesFilteredData}
+      5. if user clicks back, show filtered names again.
+      6. if user clicks back again, show previously displayed data(whatever it was) dataToDisplay = notFilteredData
+       
+       state = {
+        notFilteredData:
+        byNamesFilteredData
+        byFoodTypeFilteredData
+        dataToDisplay
+       }
+  
+  # Filter by food type
+    - Backend filter
+
+  
