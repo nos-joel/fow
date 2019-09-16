@@ -13,14 +13,19 @@
       1. state variable with all names only
       2. do the filter of names in javascript realm.
       3. do a nice display of the names. keep names in state variable for further use 
-      4. when user clicks any name, fetch whole data {dataToDisplay = byNamesFilteredData}
+      4. when user clicks any name, fetch whole data {dataToDisplay = byNamesFilteredData aka filteredData}
       5. if user clicks back, show filtered names again.
-      6. if user clicks back again, show previously displayed data(whatever it was) dataToDisplay = notFilteredData
+      6. if user clicks back again, show previously displayed data(whatever it was) dataToDisplay = notFilteredData aka filteredData
        
+       
+      current design: filteredData & allData
+      note: devise a way to detec
+      
+      
        state = {
-        notFilteredData:
-        byNamesFilteredData
-        byFoodTypeFilteredData
+        notFilteredData(allData):
+        byNamesFilteredData(filteredData)
+        byFoodTypeFilteredData(filteredData)
         dataToDisplay
        }
   
